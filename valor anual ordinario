@@ -1,0 +1,15 @@
+// Cálculo del Valor Futuro de una Anualidad Ordinaria
+INICIO
+    // Depósito mensual
+    LEER D
+    // Tasa de interés mensual (en decimal)
+    LEER i
+    // Cantidad de meses
+    LEER n
+    
+    total_depositado ← D * n
+    VF ← D * (( (1 + i) ^ n - 1 ) / i )
+    
+    IMPRIMIR "Total depositado: ", total_depositado
+    IMPRIMIR "Valor futuro de la anualidad: ", VF
+FIN
