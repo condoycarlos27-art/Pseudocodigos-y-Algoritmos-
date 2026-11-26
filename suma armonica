@@ -1,0 +1,15 @@
+// Programa que calcula la suma de la serie armónica
+INICIO
+    // Leer valor de N
+    LEER N
+    // Inicializar acumulador
+    suma ← 0
+    
+    // Recorrer desde 1 hasta N
+    PARA i DESDE 1 HASTA N HACER
+        suma ← suma + 1 / i
+    FIN PARA
+    
+    // Mostrar resultado
+    ESCRIBIR "Suma de la serie armónica hasta ", N, " es: ", suma
+FIN
