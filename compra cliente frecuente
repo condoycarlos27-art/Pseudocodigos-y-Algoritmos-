@@ -1,0 +1,32 @@
+// Calcular descuento según monto de compra y si es cliente frecuente
+INICIO
+    LEER monto_compra
+    LEER es_frecuente  // (S / N)
+    
+    // Determinar descuento base
+    SI monto_compra >= 500 ENTONCES
+        descuento_base ← 15
+    SINO SI monto_compra >= 300 ENTONCES
+        descuento_base ← 10
+    SINO SI monto_compra >= 100 ENTONCES
+        descuento_base ← 5
+    SINO
+        descuento_base ← 0
+    FIN SI
+    
+    // Aplicar descuento extra si es cliente frecuente
+    SI es_frecuente = "S" ENTONCES
+        descuento_final ← descuento_base + 5
+    SINO
+        descuento_final ← descuento_base
+    FIN SI
+    
+    // Calcular total a pagar
+    monto_descuento ← monto_compra * descuento_final / 100
+    total_a_pagar ← monto_compra - monto_descuento
+    
+    // Mostrar resultados
+    IMPRIMIR "Descuento aplicado: ", descuento_final, "%"
+    IMPRIMIR "Monto del descuento: $", monto_descuento
+    IMPRIMIR "Total a pagar: $", total_a_pagar
+FIN
