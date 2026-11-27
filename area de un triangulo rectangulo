@@ -1,0 +1,13 @@
+// Cálculo de hipotenusa y área de un triángulo rectángulo
+INICIO
+    // Cateto 1
+    LEER a
+    // Cateto 2
+    LEER b
+    
+    h ← RAÍZ( a ^ 2 + b ^ 2 )
+    area ← ( a * b ) / 2
+    
+    IMPRIMIR "Hipotenusa: ", h
+    IMPRIMIR "Área del triángulo: ", area
+FIN
