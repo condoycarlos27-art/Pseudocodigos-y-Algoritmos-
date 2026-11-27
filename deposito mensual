@@ -1,0 +1,10 @@
+INICIO
+    // Depósito mensual
+    LEER D
+    // Tasa mensual en decimal
+    LEER i
+    // Cantidad de meses
+    LEER n
+
+    total_depositado ← D * n
+    VF ← D * (( (1 + i) ^ n - 1 ) / i )
